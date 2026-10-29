@@ -25,15 +25,15 @@
                   <div class="mega-col">
                     <h3>About us</h3>
                     <a href="about.html"><span>Overview</span><small>Who we are</small></a>
-                    <a href="about.html#mission"><span>Mission</span><small>Our purpose</small></a>
-                    <a href="about.html#strategy"><span>Strategy</span><small>Transform &amp; Grow</small></a>
-                    <a href="about.html#uganda"><span>Uganda &amp; the world</span><small>Global footprint</small></a>
+                    <a href="about.html#mission"><span>Mission</span><small>Resolve the problem</small></a>
+                    <a href="about.html#strategy"><span>How we work</span><small>Problem first</small></a>
+                    <a href="about.html#problems"><span>Customer problems</span><small>What we fix</small></a>
                   </div>
                   <div class="mega-col">
                     <h3>Company</h3>
-                    <a href="about.html#data"><span>Main data</span><small>Company figures</small></a>
-                    <a href="about.html#ethics"><span>Ethics &amp; compliance</span><small>How we work</small></a>
-                    <a href="about.html#partners"><span>Partnerships</span><small>Alliances</small></a>
+                    <a href="about.html#data"><span>Outcomes</span><small>What good looks like</small></a>
+                    <a href="about.html#ethics"><span>Trust</span><small>Rules before replies</small></a>
+                    <a href="about.html#partners"><span>Stack</span><small>Where we sit</small></a>
                     <a href="contact.html"><span>Contact us</span><small>Get in touch</small></a>
                   </div>
                 </div>
@@ -51,23 +51,23 @@
                 <div class="mega-inner">
                   <div class="mega-col">
                     <h3>Business</h3>
-                    <a href="services.html#sme"><span>SME</span><small>Growing companies</small></a>
-                    <a href="services.html#corporate"><span>Corporate</span><small>Enterprise</small></a>
-                    <a href="services.html#cloud"><span>Cloud &amp; platforms</span><small>MobeCloud</small></a>
+                    <a href="services.html#support"><span>First contact</span><small>Resolve, don’t deflect</small></a>
+                    <a href="services.html#channels"><span>Every channel</span><small>One memory</small></a>
+                    <a href="services.html#success"><span>Silent churn</span><small>Risk before they leave</small></a>
                   </div>
                   <div class="mega-col">
                     <h3>Solutions</h3>
-                    <a href="services.html#networks"><span>Networks</span><small>MobeNet</small></a>
-                    <a href="services.html#consumers"><span>Digital products</span><small>Apps &amp; portals</small></a>
-                    <a href="services.html#global"><span>Global delivery</span><small>Worldwide</small></a>
+                    <a href="services.html#knowledge"><span>Knowledge</span><small>Answers that stay true</small></a>
+                    <a href="services.html#global"><span>The system</span><small>How it fits together</small></a>
+                    <a href="sustainability.html#trust"><span>Trust</span><small>What we will not invent</small></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <a class="nav-link" href="sustainability.html"${active("sustainability.html")}>Sustainability</a>
-          <a class="nav-link" href="news.html"${active("news.html")}>News</a>
+          <a class="nav-link" href="sustainability.html"${active("sustainability.html")}>Trust</a>
+          <a class="nav-link" href="news.html"${active("news.html")}>Notes</a>
           <a class="nav-link" href="careers.html"${active("careers.html")}>Careers</a>
         </nav>
 
@@ -93,21 +93,21 @@
           <div class="mobile-links">
             <a href="about.html">Overview</a>
             <a href="about.html#mission">Mission</a>
-            <a href="about.html#strategy">Strategy</a>
-            <a href="about.html#uganda">Uganda &amp; the world</a>
+            <a href="about.html#strategy">How we work</a>
+            <a href="about.html#problems">Customer problems</a>
           </div>
         </details>
         <details class="mobile-group">
           <summary>Services</summary>
           <div class="mobile-links">
-            <a href="services.html#sme">SME</a>
-            <a href="services.html#corporate">Corporate</a>
-            <a href="services.html#cloud">Cloud &amp; platforms</a>
-            <a href="services.html#networks">Networks</a>
+            <a href="services.html#support">First contact</a>
+            <a href="services.html#channels">Every channel</a>
+            <a href="services.html#success">Silent churn</a>
+            <a href="services.html#knowledge">Knowledge</a>
           </div>
         </details>
-        <a class="mobile-link" href="sustainability.html">Sustainability</a>
-        <a class="mobile-link" href="news.html">News</a>
+        <a class="mobile-link" href="sustainability.html">Trust</a>
+        <a class="mobile-link" href="news.html">Notes</a>
         <a class="mobile-link" href="investors.html">Investors</a>
         <a class="mobile-link" href="careers.html">Careers</a>
         <a class="mobile-cta" href="contact.html">Contact us →</a>
@@ -124,7 +124,7 @@
         <a class="logo logo--footer" href="index.html" aria-label="KADIMA home">
           <img class="logo-img logo-img--footer" src="kadima-logo-transparent.png" alt="KADIMA" width="2172" height="724" />
         </a>
-        <p class="footer-tagline">A Ugandan technology company delivering the best digital experience worldwide.</p>
+        <p class="footer-tagline">AI that finds the customer’s problem and resolves it.</p>
         <div class="social">
           <a href="#" aria-label="LinkedIn">in</a>
           <a href="#" aria-label="Instagram">ig</a>
@@ -138,34 +138,34 @@
         <div>
           <h4>About us</h4>
           <a href="about.html#mission">Mission</a>
-          <a href="about.html#strategy">Strategy</a>
-          <a href="about.html#data">Main data</a>
-          <a href="about.html#uganda">Uganda &amp; the world</a>
+          <a href="about.html#strategy">How we work</a>
+          <a href="about.html#data">Outcomes</a>
+          <a href="about.html#problems">Customer problems</a>
         </div>
         <div>
-          <h4>Sustainability &amp; Innovation</h4>
-          <a href="sustainability.html#esg">Sustainability strategy</a>
-          <a href="sustainability.html#society">Society</a>
-          <a href="sustainability.html#environment">Environment</a>
-          <a href="sustainability.html#innovation">Innovation</a>
+          <h4>Trust</h4>
+          <a href="sustainability.html#esg">How we answer</a>
+          <a href="sustainability.html#trust">Fair to the customer</a>
+          <a href="sustainability.html#environment">Lean systems</a>
+          <a href="sustainability.html#innovation">What is next</a>
         </div>
         <div>
           <h4>Services</h4>
-          <a href="services.html#sme">SME</a>
-          <a href="services.html#corporate">Corporate</a>
-          <a href="services.html#consumers">Consumers</a>
-          <a href="services.html#networks">Networks and technology</a>
+          <a href="services.html#support">First contact</a>
+          <a href="services.html#channels">Every channel</a>
+          <a href="services.html#success">Silent churn</a>
+          <a href="services.html#knowledge">Knowledge</a>
         </div>
         <div>
-          <h4>Shareholders &amp; Investors</h4>
-          <a href="investors.html">Share</a>
-          <a href="investors.html#reports">Financial reports</a>
-          <a href="investors.html#reports">Annual report</a>
-          <a href="investors.html#area">Shareholder’s Area</a>
+          <h4>Investors</h4>
+          <a href="investors.html">Briefing</a>
+          <a href="investors.html#reports">What we share</a>
+          <a href="investors.html#area">Why this market</a>
+          <a href="contact.html">Request a conversation</a>
         </div>
         <div>
           <h4>More</h4>
-          <a href="news.html">Communication room</a>
+          <a href="news.html">Notes</a>
           <a href="careers.html">Employment</a>
           <a href="contact.html">Contact us</a>
           <a href="about.html#partners">Partnerships</a>
@@ -173,7 +173,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© <span id="year"></span> KADIMA Ltd. · Kampala, Uganda</p>
+        <p>© <span id="year"></span> KADIMA</p>
         <div class="legal">
           <a href="#">Cookies policy</a>
           <a href="#">Legal notice</a>
@@ -313,7 +313,7 @@
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       formNote.textContent =
-        "Thank you. Our Kampala team will connect you with the right KADIMA specialists.";
+        "Thank you. We will come back on the customer problem you described.";
       formNote.classList.add("is-success");
       form.reset();
     });
@@ -332,7 +332,7 @@
     particlesJS("particles-js", {
       particles: {
         number: { value: isNarrow ? 32 : 70, density: { enable: true, value_area: isNarrow ? 700 : 900 } },
-        color: { value: ["#ffffff", "#8eb6ff", "#2f6bff"] },
+        color: { value: ["#ffffff", "#c4b5fd", "#818cf8"] },
         shape: { type: "circle" },
         opacity: {
           value: 0.45,

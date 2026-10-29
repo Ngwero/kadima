@@ -1,18 +1,18 @@
 :root {
-  --blue: #0b5fff;
-  --blue-dark: #0847c7;
-  --blue-soft: #eef3ff;
-  --ink: #0c1222;
-  --ink-soft: #3d4556;
-  --muted: #6b7280;
-  --line: #e6e8ee;
-  --bg: #ffffff;
-  --bg-alt: #f6f7f9;
-  --bg-dark: #08111f;
-  --radius: 10px;
-  --radius-sm: 8px;
+  --blue: #5b4dff;
+  --blue-dark: #3d32d4;
+  --blue-soft: #f1efff;
+  --ink: #0c0e14;
+  --ink-soft: #3c4150;
+  --muted: #6d7280;
+  --line: #e7e5ef;
+  --bg: #fafafb;
+  --bg-alt: #f3f2f8;
+  --bg-dark: #07080f;
+  --radius: 16px;
+  --radius-sm: 12px;
   --font: "Outfit", "Helvetica Neue", sans-serif;
-  --font-display: var(--font);
+  --font-display: "Syne", "Outfit", sans-serif;
   --header-h: 60px;
   --topbar-h: 0px;
   --pill-radius: 10px;
@@ -204,7 +204,7 @@ select {
   gap: 0.4rem;
   min-height: 2.55rem;
   padding: 0.5rem 1.05rem;
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--ink);
   color: #fff !important;
   font-size: 0.88rem;
@@ -486,9 +486,9 @@ body.nav-open {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 85% 20%, rgba(11, 95, 255, 0.28), transparent 55%),
-    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(11, 95, 255, 0.12), transparent 50%),
-    linear-gradient(160deg, #06101c 0%, #0a1628 45%, #0c1a32 100%);
+    radial-gradient(ellipse 70% 55% at 88% 12%, rgba(124, 92, 255, 0.45), transparent 52%),
+    radial-gradient(ellipse 50% 40% at 8% 88%, rgba(56, 189, 248, 0.16), transparent 50%),
+    linear-gradient(165deg, #07080f 0%, #12101c 48%, #0c1020 100%);
   transform: none;
   animation: none;
 }
@@ -548,7 +548,7 @@ body.nav-open {
   z-index: 2;
   width: min(1280px, 100%);
   margin: 0 auto;
-  padding: clamp(5.75rem, 11vh, 7rem) 1.5rem clamp(3rem, 6vh, 4rem);
+  padding: clamp(5.75rem, 11vh, 7rem) 1.5rem clamp(5.5rem, 10vh, 6.5rem);
 }
 
 .hero-content {
@@ -595,7 +595,7 @@ body.nav-open {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: lowercase;
-  color: rgba(158, 192, 255, 0.9);
+  color: rgba(196, 181, 253, 0.95);
 }
 
 .hero h1 {
@@ -633,7 +633,7 @@ body.nav-open {
 .hero-btn {
   min-height: 3rem;
   padding: 0.75rem 1.35rem;
-  border-radius: 8px;
+  border-radius: 999px;
   box-shadow: none;
   display: inline-flex;
   align-items: center;
@@ -651,7 +651,7 @@ body.nav-open {
   justify-content: center;
   min-height: 3rem;
   padding: 0.75rem 1.25rem;
-  border-radius: 8px;
+  border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   font-weight: 600;
   font-size: 0.92rem;
@@ -793,19 +793,18 @@ body.nav-open {
 
 .partners-layout {
   display: grid;
-  grid-template-columns: minmax(9rem, 12rem) 1fr;
-  align-items: center;
-  gap: 1.5rem 2.25rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 1.25rem;
   max-width: 1280px;
   margin: 0 auto;
-  padding-left: 1.5rem;
 }
 
 .partners-head {
   margin: 0;
-  padding: 0;
+  padding: 0 1.5rem;
   text-align: left;
-  max-width: 11rem;
+  max-width: 36rem;
   flex-shrink: 0;
 }
 
@@ -815,10 +814,10 @@ body.nav-open {
 
 .partners-head h2 {
   margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 .partners-marquee {
@@ -1078,19 +1077,20 @@ body.nav-open {
 
 .pillar {
   display: grid;
-  background: var(--bg-alt);
+  background: #fff;
   overflow: hidden;
   min-height: 320px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+  box-shadow: var(--shadow-soft);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
 
 .pillar:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: #c9ceda;
-  background: #f3f4f7;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: #d4d0e6;
+  background: #fff;
 }
 
 @media (min-width: 600px) {
@@ -1105,25 +1105,65 @@ body.nav-open {
 }
 
 .pillar-visual {
+  position: relative;
   min-height: 180px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.22), transparent 42%),
+    linear-gradient(160deg, #1c1733, #3b2f86);
+}
+
+.pillar-visual::before,
+.pillar-visual::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.pillar-visual::before {
+  inset: 16%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.pillar-visual::after {
+  width: 42%;
+  height: 42%;
+  right: 12%;
+  bottom: 14%;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.55), transparent 68%);
+  filter: blur(2px);
 }
 
 .pillar-visual--1 {
-  background-image: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.25)), url("images/pillar-mission.jpg");
+  background:
+    radial-gradient(circle at 20% 80%, rgba(125, 211, 252, 0.45), transparent 46%),
+    linear-gradient(160deg, #24184a, #5b4dff);
 }
 .pillar-visual--2 {
-  background-image: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.25)), url("images/pillar-strategy.jpg");
+  background:
+    radial-gradient(circle at 80% 20%, rgba(244, 114, 182, 0.4), transparent 42%),
+    linear-gradient(160deg, #1a1230, #7c3aed);
 }
 .pillar-visual--3 {
-  background-image: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.25)), url("images/pillar-networks.jpg");
+  background:
+    radial-gradient(circle at 70% 80%, rgba(45, 212, 191, 0.4), transparent 46%),
+    linear-gradient(160deg, #0f172a, #312e81);
 }
 .pillar-visual--4 {
-  background-image: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.25)), url("images/pillar-trust.jpg");
+  background:
+    radial-gradient(circle at 30% 30%, rgba(251, 191, 36, 0.35), transparent 40%),
+    linear-gradient(160deg, #1e1b4b, #4338ca);
 }
 .pillar-visual--5 {
-  background-image: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.2)), url("images/pillar-innovation.jpg");
+  background:
+    radial-gradient(circle at 75% 30%, rgba(167, 139, 250, 0.55), transparent 42%),
+    linear-gradient(120deg, #0b1020, #4c1d95 55%, #312e81);
 }
 
 .pillar-body {
@@ -1184,7 +1224,7 @@ body.nav-open {
 }
 
 .feature-banner .eyebrow {
-  color: rgba(158, 192, 255, 0.85);
+  color: rgba(196, 181, 253, 0.9);
 }
 
 .feature-banner h2 {
@@ -1212,7 +1252,7 @@ body.nav-open {
   justify-content: center;
   min-height: 2.75rem;
   padding: 0.7rem 1.25rem;
-  border-radius: 8px;
+  border-radius: 999px;
   font-weight: 600;
   font-size: 0.92rem;
   border: 0;
@@ -1221,9 +1261,10 @@ body.nav-open {
 }
 
 .btn-primary {
-  background: var(--blue);
+  background: linear-gradient(180deg, #6d5efc, var(--blue));
   color: #fff;
-  border-radius: 8px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(91, 77, 255, 0.28);
 }
 
 .btn-primary:hover {
@@ -1289,23 +1330,39 @@ body.nav-open {
 }
 
 .news-card {
-  background: var(--bg-alt);
+  background: #fff;
   overflow: hidden;
   display: grid;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .news-card:hover {
-  box-shadow: none;
-  border-color: #c9ceda;
+  box-shadow: var(--shadow);
+  border-color: #d4d0e6;
+  transform: translateY(-2px);
 }
 
 .news-image {
+  position: relative;
   min-height: 160px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.2), transparent 40%),
+    linear-gradient(145deg, #1e1b4b, #5b4dff);
+}
+
+.news-image::after {
+  content: "";
+  position: absolute;
+  inset: 18% 14%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
 .news-card--featured .news-image {
@@ -1313,13 +1370,19 @@ body.nav-open {
 }
 
 .news-image--1 {
-  background-image: url("images/news-1.jpg");
+  background:
+    radial-gradient(circle at 80% 20%, rgba(125, 211, 252, 0.45), transparent 42%),
+    linear-gradient(145deg, #1e1b4b, #4f46e5);
 }
 .news-image--2 {
-  background-image: url("images/news-2.jpg");
+  background:
+    radial-gradient(circle at 20% 80%, rgba(244, 114, 182, 0.4), transparent 46%),
+    linear-gradient(145deg, #312e81, #7c3aed);
 }
 .news-image--3 {
-  background-image: url("images/news-3.jpg");
+  background:
+    radial-gradient(circle at 70% 70%, rgba(45, 212, 191, 0.4), transparent 46%),
+    linear-gradient(145deg, #0f172a, #4338ca);
 }
 
 .news-body {
@@ -1436,14 +1499,14 @@ body.nav-open {
   display: grid;
   gap: 0.9rem;
   min-height: 230px;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-tile:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: #c9ceda;
-  background: var(--bg-alt);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: #d4d0e6;
+  background: #fff;
 }
 
 .service-tile h3 {
@@ -1665,14 +1728,31 @@ body.nav-open {
 
 /* Careers */
 .careers {
+  position: relative;
   background:
-    linear-gradient(120deg, rgba(8, 17, 31, 0.88), rgba(8, 17, 31, 0.72)),
-    url("images/careers.jpg") center / cover no-repeat;
+    radial-gradient(ellipse 60% 80% at 90% 20%, rgba(124, 92, 255, 0.45), transparent 55%),
+    radial-gradient(ellipse 40% 50% at 8% 90%, rgba(56, 189, 248, 0.18), transparent 50%),
+    linear-gradient(160deg, #07080f, #161228);
   color: #fff;
   padding: 5rem 1.5rem;
+  overflow: hidden;
+}
+
+.careers::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 90%);
+  pointer-events: none;
 }
 
 .careers-inner {
+  position: relative;
+  z-index: 1;
   max-width: 720px;
   margin: 0 auto;
   text-align: center;
@@ -2152,15 +2232,22 @@ body.nav-open {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--page-hero-image, url("images/about-hero.jpg")) center / cover no-repeat;
-  opacity: 0.35;
+  background:
+    radial-gradient(ellipse 70% 80% at 100% 0%, rgba(124, 92, 255, 0.48), transparent 55%),
+    radial-gradient(ellipse 40% 50% at 0% 100%, rgba(56, 189, 248, 0.16), transparent 50%),
+    linear-gradient(165deg, #07080f, #141226);
+  opacity: 1;
 }
 
 .page-hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, rgba(8, 17, 31, 0.75) 0%, rgba(8, 17, 31, 0.35) 100%);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 88%);
   pointer-events: none;
 }
 
@@ -2171,32 +2258,14 @@ body.nav-open {
   margin: 0 auto;
 }
 
-.page-hero--about {
-  --page-hero-image: url("images/about-hero.jpg");
-}
-
-.page-hero--services {
-  --page-hero-image: url("images/services.jpg");
-}
-
-.page-hero--sustainability {
-  --page-hero-image: url("images/pillar-innovation.jpg");
-}
-
-.page-hero--news {
-  --page-hero-image: url("images/news-2.jpg");
-}
-
-.page-hero--investors {
-  --page-hero-image: url("images/pillar-strategy.jpg");
-}
-
-.page-hero--careers {
-  --page-hero-image: url("images/careers.jpg");
-}
-
+.page-hero--about,
+.page-hero--services,
+.page-hero--sustainability,
+.page-hero--news,
+.page-hero--investors,
+.page-hero--careers,
 .page-hero--contact {
-  --page-hero-image: url("images/contact.jpg");
+  background: var(--bg-dark);
 }
 
 .page-hero .breadcrumb {
@@ -2284,9 +2353,11 @@ body.nav-open {
 }
 
 .info-card {
-  background: var(--bg-alt);
+  background: #fff;
   padding: 1.75rem 1.6rem;
-  border-left: 3px solid var(--blue);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
 }
 
 .info-card h3 {
@@ -2314,8 +2385,13 @@ body.nav-open {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/uganda.jpg") center / cover no-repeat;
-  opacity: 0.35;
+  background:
+    radial-gradient(ellipse 55% 80% at 100% 10%, rgba(124, 92, 255, 0.4), transparent 55%),
+    radial-gradient(ellipse 40% 50% at 0% 100%, rgba(56, 189, 248, 0.14), transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+  opacity: 1;
 }
 
 .uganda-banner-inner {
@@ -2361,8 +2437,9 @@ body.nav-open {
 
 .market-list li {
   padding: 1.05rem 1.15rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-left: 3px solid var(--blue);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   font-weight: 500;
   line-height: 1.45;
 }
@@ -2413,19 +2490,39 @@ body.nav-open {
   font-size: 0.95rem;
 }
 
-.office-photo {
+.office-photo,
+.about-photo {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.22), transparent 36%),
+    radial-gradient(circle at 20% 80%, rgba(125, 211, 252, 0.35), transparent 42%),
+    linear-gradient(155deg, #1e1b4b, #5b4dff 70%);
+}
+
+.office-photo {
   aspect-ratio: 16 / 10;
   margin: 1rem 0 0;
-  background: url("images/contact.jpg") center / cover no-repeat;
-  border: 1px solid var(--line);
 }
 
 .about-photo {
-  width: 100%;
   aspect-ratio: 4 / 3;
-  background: url("images/uganda.jpg") center / cover no-repeat;
-  border: 1px solid var(--line);
+}
+
+.office-photo::after,
+.about-photo::after {
+  content: "";
+  position: absolute;
+  inset: 14%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 18px 18px;
 }
 
 .band-alt {
